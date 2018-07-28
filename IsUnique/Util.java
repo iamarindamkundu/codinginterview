@@ -5,6 +5,7 @@ public class Util {
         System.out.println(isUniqueCharacters("ah"));
     }
 
+    // approach #1
     public static boolean isUniqueCharacters (String str) {
         for (int i = 0; i < str.length(); i++) {
             char eachChar = str.charAt(i);
