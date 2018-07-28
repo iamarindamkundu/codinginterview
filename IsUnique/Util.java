@@ -1,3 +1,5 @@
+// Is Unique: Implement an algorithm to determine if a string has all unique characters. What if you
+// cannot use additional data structures? 
 // Check if all characters are unique in a string 
 public class Util {
 
