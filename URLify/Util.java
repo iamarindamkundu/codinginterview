@@ -14,13 +14,20 @@ public class Util{
     }
 
     public static String createUrl(String str) {
+        str = str.trim();
         char[] charArray = str.toCharArray();
         char[] delimiter = new char[]{'%','2','0'};
+        String result = "";
         for(int i = 0; i < charArray.length; i++) {
             if (charArray[i] == ' ') {
-
+                for (int j = 0; j < delimiter.length; j++) {
+                    result += delimiter[j];
+                }
+            }
+            else {
+                result += charArray[i];
             }
         }
-        return null;
+        return result.trim();
     }
 }
